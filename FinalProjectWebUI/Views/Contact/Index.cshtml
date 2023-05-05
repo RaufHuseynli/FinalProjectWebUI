@@ -1,0 +1,56 @@
+﻿@model Contact
+@section addcss{
+            <link rel="stylesheet" href="~/assets/css/newacc.min.css" />
+}
+<main>
+    <section id="signup">
+        <h3>Contact</h3>
+
+    </section>
+    <section id="main">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="first-col col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-start">
+                    <form asp-action="index" method="post" style="width: 100%;">
+                    <div class="log-form d-flex flex-column" style="width: 100%;">
+                            @if (!string.IsNullOrWhiteSpace(ViewBag.msg))
+                            {
+                                <div class="name-gr d-flex justify-content-between">
+                                    <label id="name" style="border: none;">@ViewBag.msg</label>
+                                </div>
+                            }
+
+                        <div class="name-gr d-flex justify-content-between">
+                            <input type="text" asp-for="FullName" id="name" placeholder="Fullname" style="width: 100%;">
+                        </div>
+                        <div class="name-gr d-flex justify-content-between">
+                            <input type="text" asp-for="Subject" id="name" placeholder="Subject" style="width: 100%;">
+                        </div>
+                        <div class="name-gr d-flex justify-content-between">
+                            <input type="email" asp-for="Email" id="name" placeholder="Email" style="width: 100%;">
+                        </div>
+
+                        <div class="name-gr d-flex justify-content-between">
+                            <textarea rows="7" type="email" asp-for="Message" id="name" placeholder="Subject" style="width: 100%; font-size: 14px;"></textarea>
+                        </div>
+
+                        <input type="submit" class="btn loginbtn" />
+                    </div>
+                    </form>
+                </div>
+                <div class="imgcol col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-end">
+                    <img draggable="false" src="~/assets/images/rednewacc.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="balmain-logo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <a href=""><img src="~/assets/images/balmain.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

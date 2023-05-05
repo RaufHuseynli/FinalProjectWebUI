@@ -1,0 +1,38 @@
+﻿@model IEnumerable<SiteSocial>
+<footer>
+    <section id="socials">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 second">
+                    <ul class="d-flex align-items-center justify-content-evenly">
+                        @foreach (var item in Model)
+                        {
+                           <li>
+                                <a href="@item.Social.Link" style="color: black; font-size: 2rem;">
+                                    @Html.Raw(@item.Social.Icon)
+                            </a>
+                        </li>
+                        }
+  
+  
+                    </ul>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="last">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 rights d-flex justify-content-center align-items-center">
+                    <h4>© 2023 Balmain Paris licensing, LLC. All rights reserved.</h4>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 id d-flex justify-content-center align-items-center">
+                    <h4>Web ID: 265194225</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Collection>
+@{
+    var count = 0;
+}
+@if (string.IsNullOrWhiteSpace(ViewBag.First))
+{
+    @foreach (var item in Model)
+    {
+        count++;
+        @if (count > 1)
+        {
+            <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 woman" style="background: url(/assets/img/@item.ImagePath); background-size: cover; margin: 2%;">
+                <a asp-controller="shop" asp-action="index" asp-route-collection="@item.Id">
+                    <p>
+                        @Html.Raw(item.Name)
+                    </p>
+                </a>
+            </div>
+        }
+
+
+    }
+}
+    else
+        {
+        <section id="stranger-things">
+        <div class="container-fluid">
+            <div class="row">
+
+
+
+                <div class="col" style="background: url(/assets/img/@Model.FirstOrDefault().ImagePath); background-size: cover">
+                    <div class="collab-text">
+                        @Model.FirstOrDefault().Name
+                        <div class="shop-link">
+                            <a asp-controller="shop" asp-action="index" asp-route-collection="@Model.FirstOrDefault().Id">shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+}

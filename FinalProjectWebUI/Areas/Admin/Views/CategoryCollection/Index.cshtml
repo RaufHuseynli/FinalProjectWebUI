@@ -1,0 +1,85 @@
+﻿@model CategoryCollectionViewModel
+
+<div class="col-xl-6">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Categories</h4>
+            <p class="card-description">
+                Add Category <code> <a class="btn btn-primary" asp-action="AddCategory">Create Category</a></code>
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered border-primary mb-0">
+
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Categories)
+                        {
+                            <tr>
+                                <td>
+                                    @item.Name
+                                </td>
+                                <td>
+                                    <a asp-action="UpdateCategory" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-pen"></i></a>
+                                    <a asp-action="DeleteCategory" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+
+                            </tr>
+
+
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="col-xl-6">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Collections</h4>
+            <p class="card-description">
+                Add Collection <code> <a class="btn btn-primary" asp-action="AddCollection">Create Collection</a></code>
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered border-primary mb-0">
+
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Collections)
+                        {
+                            <tr>
+                                <td>
+                                   <img width="40" height="40" src="~/assets/img/@item.ImagePath"/>
+                                </td>
+                                <td>
+                                    @item.Name
+                                </td>
+                                <td>
+                                    <a asp-action="CollectionDetail" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-info"></i></a>
+                                    <a asp-action="UpdateCollection" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-pen"></i></a>
+                                    <a asp-action="DeleteCollection" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>

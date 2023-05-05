@@ -1,0 +1,616 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+* body header {
+  margin-top: 2vw;
+}
+* body header .grid-container {
+  border-bottom: 0.25px solid black;
+  padding-bottom: 2vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+* body header .grid-container .item-1 button {
+  color: #575757;
+  padding: 0;
+  font-weight: 300;
+  letter-spacing: 11%;
+  transition: 0.5s;
+  font-size: 15px;
+}
+* body header .grid-container .item-1 button:hover {
+  color: black;
+}
+* body header .grid-container .item-1 .dropdown {
+  position: relative;
+  display: inline-block;
+}
+* body header .grid-container .item-1 .dropdown:hover .dropdown-content {
+  display: block;
+}
+* body header .grid-container .item-1 .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+* body header .grid-container .item-1 .dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 1vw 2vw;
+  transition: 0.5s;
+}
+* body header .grid-container .item-1 .dropdown-content a:hover {
+  color: red;
+  background-color: rgba(233, 233, 233, 0.622);
+}
+* body header .grid-container .item-1,
+* body header .grid-container .item-2,
+* body header .grid-container .item-3,
+* body header .grid-container .item-4,
+* body header .grid-container .item-5,
+* body header .grid-container .item-6,
+* body header .grid-container .item-7 {
+  text-align: center;
+}
+* body header .grid-container .item-1 a,
+* body header .grid-container .item-2 a,
+* body header .grid-container .item-3 a,
+* body header .grid-container .item-4 a,
+* body header .grid-container .item-5 a,
+* body header .grid-container .item-6 a,
+* body header .grid-container .item-7 a {
+  text-decoration: none;
+  color: #575757;
+  font-weight: 300;
+  font-size: 15px;
+  transition: 0.5s;
+}
+* body header .grid-container .item-1 a:hover,
+* body header .grid-container .item-2 a:hover,
+* body header .grid-container .item-3 a:hover,
+* body header .grid-container .item-4 a:hover,
+* body header .grid-container .item-5 a:hover,
+* body header .grid-container .item-6 a:hover,
+* body header .grid-container .item-7 a:hover {
+  color: black;
+}
+* body header .grid-container .item-1 {
+  grid-area: cur;
+}
+* body header .grid-container .item-2 {
+  grid-area: store;
+}
+* body header .grid-container .item-3 {
+  grid-area: customer;
+}
+* body header .grid-container .item-4 {
+  grid-area: balmain;
+}
+* body header .grid-container .item-5 {
+  grid-area: sign;
+}
+* body header .grid-container .item-6 {
+  grid-area: acc;
+}
+* body header .grid-container .item-7 {
+  grid-area: help;
+}
+@media (min-width: 576px) {
+  * body header .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "balmain" "cur" "store" "customer" "sign" "acc" "help";
+  }
+}
+@media (min-width: 990px) {
+  * body header .grid-container {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: "cur store customer balmain sign acc help";
+  }
+}
+* body header #more-nav {
+  margin-top: 3vw;
+  margin-bottom: 2.5vw;
+}
+* body header #more-nav .container-fluid .row .navnav ul {
+  padding: 0;
+  list-style-type: none;
+}
+* body header #more-nav .container-fluid .row .navnav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  color: #474747;
+  transition: 0.5s;
+}
+* body header #more-nav .container-fluid .row .navnav ul li a:hover {
+  color: black;
+}
+* body header #more-nav .container-fluid .row .icons a {
+  text-decoration: none;
+}
+* body header #more-nav .container-fluid .row .icons a i {
+  color: black;
+  font-size: 20px;
+}
+* body main #main-bag .text-cont h3 {
+  font-weight: 500;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+* body main #main-bag .text-cont p {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+* body main #main-bag .container {
+  margin-top: 2vw;
+}
+* body main #main-bag .container .row .shop .product-container {
+  border: 0.25px solid rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+}
+* body main #main-bag .container .row .shop .product-container .rest-container .name-price h5 {
+  font-size: 15px;
+  font-weight: 500;
+}
+* body main #main-bag .container .row .shop .product-container .rest-container .name-price p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 18vw;
+}
+* body main #main-bag .container .row .shop .product-container .rest-container .info-qty {
+  margin-top: 1vw;
+}
+* body main #main-bag .container .row .shop .product-container .rest-container .info-qty .color-stock p {
+  text-transform: lowercase !important;
+  font-weight: 400;
+}
+* body main #main-bag .container .row .shop .product-container .rest-container .info-qty .color-stock p span {
+  font-weight: 500;
+}
+* body main #main-bag .container .row .shop .product-container .rest-container .info-qty .qty-container button {
+  border: 1px solid black;
+  width: 25px;
+  height: 25px;
+}
+* body main #main-bag .container .row .shop .product-container .rest-container .info-qty .qty-container input {
+  border: 0.25px solid black;
+  padding: 6px 12px;
+  width: 25px;
+  height: 25px;
+}
+* body main #main-bag .container .row .shop .product-container .rest-container .edit-remove {
+  margin-top: 1vw;
+}
+* body main #main-bag .container .row .shop .product-container .rest-container .edit-remove a {
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+}
+* body main #main-bag .container .row .shop .product-container .rest-container .edit-remove button {
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0;
+}
+* body main #main-bag .container .row .checkout #promo .accordion-panel {
+  transition: 0.5s;
+  border: 1px solid #000000;
+  border-radius: 30px;
+}
+* body main #main-bag .container .row .checkout #promo .accordion-panel .accordion {
+  color: #000000;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.4s;
+  letter-spacing: 11%;
+  background-color: transparent;
+  padding: 1vw;
+}
+* body main #main-bag .container .row .checkout #promo .accordion-panel .accordion {
+  border: none;
+}
+* body main #main-bag .container .row .checkout #promo .accordion-panel .accordion:after {
+  content: "+";
+  color: #000000;
+  float: right;
+  margin-left: 5px;
+  font-weight: 200;
+  font-size: 20px;
+}
+* body main #main-bag .container .row .checkout #promo .accordion-panel .active:after {
+  content: "−";
+}
+* body main #main-bag .container .row .checkout #promo .accordion-panel .panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+* body main #main-bag .container .row .checkout #promo .accordion-panel .panel input {
+  border: none;
+  border-bottom: 1px solid black;
+}
+* body main #main-bag .container .row .checkout #promo .accordion-panel .panel button {
+  background-color: black;
+  padding: 0.5vw;
+  color: white;
+  text-transform: uppercase;
+}
+* body main #main-bag .container .row .checkout #promo .accordion-panel:hover {
+  border-color: black;
+}
+* body main #main-bag .container .row .checkout #summary {
+  margin-top: 2vw;
+  padding: 1vw;
+  border: 0.25px solid rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+}
+* body main #main-bag .container .row .checkout #summary h5 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #0e0d0d;
+  text-transform: uppercase;
+}
+* body main #main-bag .container .row .checkout #summary .subtotal p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+* body main #main-bag .container .row .checkout #summary .shipping p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+* body main #main-bag .container .row .checkout #summary .tax {
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+}
+* body main #main-bag .container .row .checkout #estimate {
+  margin-top: 2vw;
+  padding: 1vw;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+* body main #main-bag .container .row .checkout #estimate p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #020202;
+  padding: 0;
+  text-transform: uppercase;
+  margin: 0;
+}
+* body main #main-bag .container .row .checkout #checkout {
+  margin-top: 2vw;
+}
+* body main #main-bag .container .row .checkout #checkout button {
+  width: 100%;
+  padding: 1vw;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+* body main #main-bag .container .row .checkout #checkout button:hover {
+  background-color: lightgreen;
+  border-color: lightgreen;
+  color: black;
+}
+* body main #main-bag .container .row .checkout #payment-sys {
+  margin-top: 1.5vw;
+}
+* body main #also-like {
+  margin-top: 7vw;
+  border-bottom: 0.25px solid black;
+  padding-bottom: 15vw;
+}
+* body main #also-like .container h5 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  letter-spacing: 3px;
+  margin-bottom: none;
+}
+* body main #also-like .container .grid-container {
+  display: grid;
+  grid-column-gap: 5rem;
+  grid-row-gap: 5rem;
+}
+* body main #also-like .container .grid-container .grid-item {
+  border: none;
+}
+* body main #also-like .container .grid-container .grid-item .product-container {
+  margin-top: 3vw;
+  width: 23vw;
+  height: 40vw;
+}
+* body main #also-like .container .grid-container .grid-item .product-container .productimgg {
+  width: 23vw;
+  height: 40vw;
+}
+* body main #also-like .container .grid-container .grid-item .product-container .card {
+  display: block;
+  border: none;
+  min-width: 25vw;
+}
+* body main #also-like .container .grid-container .grid-item .product-container .card a img {
+  width: 100%;
+}
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls .carousel-inner .carousel-item,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls1 .carousel-inner .carousel-item,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls2 .carousel-inner .carousel-item,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls3 .carousel-inner .carousel-item,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls4 .carousel-inner .carousel-item,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls5 .carousel-inner .carousel-item,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls6 .carousel-inner .carousel-item,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls7 .carousel-inner .carousel-item,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls8 .carousel-inner .carousel-item,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls9 .carousel-inner .carousel-item,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls10 .carousel-inner .carousel-item,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls11 .carousel-inner .carousel-item,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls12 .carousel-inner .carousel-item {
+  background-color: #f5f5f5;
+  border: 1px solid transparent;
+  border-radius: 25px;
+}
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls span,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls1 span,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls2 span,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls3 span,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls4 span,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls5 span,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls6 span,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls7 span,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls8 span,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls9 span,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls10 span,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls11 span,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls12 span {
+  color: pink;
+}
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls span i,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls1 span i,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls2 span i,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls3 span i,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls4 span i,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls5 span i,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls6 span i,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls7 span i,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls8 span i,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls9 span i,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls10 span i,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls11 span i,
+* body main #also-like .container .grid-container .grid-item .product-container .card #carouselExampleControls12 span i {
+  color: #0c0b0b;
+  font-size: 25px;
+}
+* body main #also-like .container .grid-container .grid-item .product-container .card .card-body {
+  margin-top: 3vw;
+}
+* body main #also-like .container .grid-container .grid-item .product-container .card .card-body a {
+  text-decoration: none;
+}
+* body main #also-like .container .grid-container .grid-item .product-container .card .card-body a .card-title {
+  font-weight: 500;
+  font-size: 25px;
+  color: black;
+  transition: 0.5s;
+  display: inline;
+}
+* body main #also-like .container .grid-container .grid-item .product-container .card .card-body a .card-title:hover {
+  border-bottom: 0.5px solid rgb(0, 0, 0);
+}
+* body main #also-like .container .grid-container .grid-item .product-container .card .card-body a .card-text {
+  margin-top: 2vw;
+  transition: 0.5s;
+  font-weight: 250;
+  color: black;
+  font-size: 25px;
+}
+* body main #also-like .container .grid-container .grid-item .product-container .card .card-body a .card-text button .color-swatch {
+  border: 1px solid gray;
+  border-radius: 50%;
+  background-color: black;
+  width: 20px !important;
+  height: 20px !important;
+  transition: 0.5s;
+}
+* body main #also-like .container .grid-container .grid-item .product-container .card .card-body a .card-text button .color-swatch:hover {
+  border: 1px solid rgb(255, 0, 0);
+}
+@media (min-width: 576px) {
+  * body main #also-like .container .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 990px) {
+  * body main #also-like .container .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+* body main #balmain-logo {
+  padding: 3vw 0;
+  border-bottom: 0.25px solid black;
+  margin-bottom: 4vw;
+}
+* body main #balmain-logo .container-fluid .row .col img {
+  text-align: center;
+  width: 100%;
+}
+* body footer #socials {
+  margin-bottom: 4vw;
+}
+* body footer #socials .container-fluid .row .second ul {
+  padding: 0;
+  list-style-type: none;
+}
+* body footer #prelast-footer .container-fluid .row .custcust .customer h4 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+* body footer #prelast-footer .container-fluid .row .custcust .customer ul {
+  padding: 0;
+  list-style-type: none;
+}
+* body footer #prelast-footer .container-fluid .row .custcust .customer ul li {
+  margin-bottom: 0.4vw;
+}
+* body footer #prelast-footer .container-fluid .row .custcust .customer ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: 17px;
+  transition: 0.5s;
+}
+* body footer #prelast-footer .container-fluid .row .custcust .customer ul li a:hover {
+  color: red;
+}
+* body footer #prelast-footer .container-fluid .row .polpol .policy h4 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+* body footer #prelast-footer .container-fluid .row .polpol .policy ul {
+  padding: 0;
+  list-style-type: none;
+}
+* body footer #prelast-footer .container-fluid .row .polpol .policy ul li {
+  margin-bottom: 0.4vw;
+}
+* body footer #prelast-footer .container-fluid .row .polpol .policy ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: 17px;
+  transition: 0.5s;
+}
+* body footer #prelast-footer .container-fluid .row .polpol .policy ul li a:hover {
+  color: red;
+}
+* body footer #prelast-footer .container-fluid .row .secsec .security h4 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+* body footer #prelast-footer .container-fluid .row .secsec .security p {
+  font-weight: 300;
+}
+* body footer #prelast-footer .container-fluid .row .secsec .security p:hover {
+  text-decoration: underline;
+}
+* body footer #prelast-footer .container-fluid .row .secsec .security img {
+  margin-top: 2vw;
+}
+* body footer #last {
+  margin-top: 2vw;
+  background-color: black;
+}
+* body footer #last .container-fluid .row .rights,
+* body footer #last .container-fluid .row .id {
+  padding: 0;
+}
+* body footer #last .container-fluid .row .rights h4,
+* body footer #last .container-fluid .row .id h4 {
+  padding: 1vw 0;
+  color: white;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+  vertical-align: 0;
+  transition: 0.5s;
+}
+* body footer #last .container-fluid .row .rights h4:hover,
+* body footer #last .container-fluid .row .id h4:hover {
+  color: red;
+}
+
+@media screen and (max-width: 760px) {
+  * body header {
+    margin-top: 5vw;
+  }
+  * body header .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "balmain" "cur" "store" "customer" "sign" "acc" "help";
+  }
+  * body header .grid-container .item-1 .dropdown-content {
+    background: white;
+  }
+  * body header #more-nav .container-fluid .row .navnav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  * body main #main-bag .text-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  * body main #main-bag .text-cont h3 {
+    text-align: center;
+  }
+  * body main #main-bag .text-cont p {
+    text-align: center;
+  }
+  * body main #main-bag .container .row .shop .product-container {
+    display: flex;
+    flex-direction: column;
+  }
+  * body main #main-bag .container .row .shop .product-container .rest-container {
+    padding: 10px;
+  }
+  * body main #also-like .container h5 {
+    text-align: center;
+  }
+  * body main #also-like .container .grid-container .grid-item .product-container {
+    width: 300px;
+    height: 500px;
+  }
+  * body footer #prelast-footer .container-fluid .row .custcust .customer h4 {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .custcust .customer ul li {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .polpol .policy h4 {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .polpol .policy ul li {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .secsec .security h4 {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .secsec .security p {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .secsec .security a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .secsec .security a img {
+    text-align: center;
+  }
+}/*# sourceMappingURL=shoppingbag.css.map */

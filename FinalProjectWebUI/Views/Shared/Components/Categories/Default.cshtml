@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Category>
+
+@foreach (var item in Model)
+{
+    <div class="category-container newin" style="background: url(/assets/img/@item.Products.FirstOrDefault(p=> p.CategoryId == item.Id).ImagePath); background-size: cover; background-repeat: no-repeat;">
+        <a asp-controller="shop" asp-action="index" asp-route-category="@item.Id"><h4>@item.Name</h4></a>
+    </div>
+}

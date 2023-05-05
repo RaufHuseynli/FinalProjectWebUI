@@ -1,0 +1,67 @@
+﻿@model SiteInfoViewModel
+@{
+    ViewData["Title"] = "Site Info / Store Dteail";
+
+}
+@section addcss{
+        <style>
+            label {
+                border-color: transparent !important;
+                color: black !important;
+                background-color: transparent !important;
+            }
+        </style>
+ }
+
+<div class="container p-5">
+    <h2 class="text-dark">Update Store</h2>
+
+
+    <div class="form-group">
+        <form>
+            <div class="col-md-12 form-control bg-transparent border-0" asp-validation-summary="All"></div>
+            <div class="form-group">
+                <label class="form-control">Name</label>
+                <input required asp-for="Store.Name" class="form-control text-dark" />
+                <span asp-validation-for="Store.Name" class="text-danger"></span>
+            </div>
+
+
+
+            @foreach (var item in Model.SiteInfo)
+            {
+                <div class="form-group">
+                    <label class="form-control" for="name">Name</label>
+                    <input id="name" required value="@item.Name" class="form-control text-dark" />
+
+                </div>
+                <div class="form-group">
+                    <label class="form-control" for="name">SiteInfo.Number</label>
+                    <input id="name" required value="@item.Number" class="form-control text-dark" />
+              
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control" for="name">Email</label>
+                    <input id="name" required value="@item.Email" class="form-control text-dark" />
+           
+                </div>
+                <div class="form-group">
+                    <label class="form-control" for="name">Address</label>
+                    <input id="name" required value="@item.Address" class="form-control text-dark" />
+               
+                </div>
+            }
+
+
+
+
+            <div class="d-flex my-5">
+                <a asp-action="index" class="btn btn-success">Back</a>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

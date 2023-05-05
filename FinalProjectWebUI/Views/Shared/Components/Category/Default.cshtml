@@ -1,0 +1,84 @@
+﻿@model FilterViewModel
+<div class="colorcol col-sm-12 col-md-12 col-lg-4 col-xl-4">
+    <form asp-controller="shop" asp-action="index" method="get">
+    <section id="color-choice">
+        <div class="accordion-panel">
+            <button class="accordion d-flex justify-content-between">
+                color
+            </button>
+            <div class="panel grid-container">
+
+                @foreach (var item in Model.Colors)
+                {
+                    <label class="card color-button d-flex align-items-center justify-content-center flex-row" for="color-@item.Id" data-id="@item.Id">
+                        <div class="me-3" style="background-color: @item.HexCode"></div>
+                        @item.Name
+                        <input type="hidden" asp-for="FilterFormModel.ColorId" class="color-id" id="color-@item.Id" style="opacity: 0;">
+                    </label>
+                }
+
+              
+            </div>
+        </div>
+    </section>
+    <section id="size-choice">
+        <div class="accordion-panel">
+            <button class="accordion d-flex justify-content-between">
+                size
+            </button>
+            <div class="panel first grid-container">
+                @foreach (var item in Model.Sizes)
+                {
+                    <button class="card size-button btn d-flex align-items-center justify-content-center flex-row" data-id="@item.Id">
+                        @item.Name
+                        <input type="hidden" asp-for="FilterFormModel.SizeId" class="size-id" id="color-@item.Id" style="opacity: 0;">
+                    </button>
+                }
+
+            </div>
+        </div>
+    </section>
+    <section id="category-choice">
+        <div class="accordion-panel">
+            <button class="accordion d-flex justify-content-between">
+                category
+            </button>
+            <div class="panel">
+              <div class="form-group">
+                  <select class="form-control" asp-for="FilterFormModel.CategoryId"> 
+                            <option value="0" selected disabled>Category</option>
+                      @foreach (var item in Model.Categories)
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        } 
+                  </select>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section id="price-choice">
+        <div class="accordion-panel">
+            <button class="accordion d-flex justify-content-between">
+                price
+            </button>
+            <div class="panel">
+                <div class="form-control">
+                <label class="form-control" id="amount" style="border: none !important;">Max Price: 0</label>
+                <input asp-for="FilterFormModel.Max" type="range" id="price-max" style="width: 100%;" min="0" max="15000" value="0"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <input asp-for="FilterFormModel.GenderId" type="hidden" value="@ViewBag.Gender" />
+            
+  
+        <section id="gender-choice">
+            <div class="accordion-panel">
+                <input type="submit" class="btn btn-outline-dark d-flex justify-content-between" value="Search" />
+              
+                </div>
+        </section>
+    </form>
+</div>

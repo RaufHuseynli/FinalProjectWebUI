@@ -1,0 +1,37 @@
+﻿@model UserFormModel
+<main>
+    <section id="main">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="first-col col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-start">
+                    <form asp-action="login" method="post" style="width: 100%;">
+                        <div class="log-form d-flex flex-column" style="width: 100%;">
+
+                            <div class="name-gr d-flex justify-content-between" style="margin-top: 2%;">
+                                <input type="text" asp-for="Username" id="name" placeholder="Username" style="width: 100%;">
+                            </div>
+                            <div class="name-gr d-flex justify-content-between" style="margin-top: 2%;">
+                                <input type="password" asp-for="Password" id="name" placeholder="Password" style="width: 100%;">
+                            </div>
+        
+
+                            <input type="submit" class="btn loginbtn" value="Login" style="margin-top: 2%;" />
+                        </div>
+                    </form>
+                </div>
+                <div class="imgcol col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-end">
+                    <img draggable="false" src="/assets/images/redlog.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="balmain-logo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <a href=""><img src="/assets/images/balmain.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

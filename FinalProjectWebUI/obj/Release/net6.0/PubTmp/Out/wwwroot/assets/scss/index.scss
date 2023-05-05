@@ -1,0 +1,889 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  body {
+    header {
+      margin-top: 2vw;
+      .grid-container {
+        border-bottom: 0.25px solid black;
+        padding-bottom: 2vw;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        .item-1 {
+          button {
+            color: #575757;
+            padding: 0;
+            font-weight: 300;
+            letter-spacing: 11%;
+            transition: 0.5s;
+            font-size: 15px;
+          }
+          button:hover {
+            color: black;
+          }
+          .dropdown {
+            position: relative;
+            display: inline-block;
+            &:hover {
+              .dropdown-content {
+                display: block;
+              }
+            }
+          }
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            a {
+              color: black;
+              text-decoration: none;
+              display: block;
+              padding: 1vw 2vw;
+              transition: 0.5s;
+            }
+            a:hover {
+              color: red;
+              background-color: rgba(233, 233, 233, 0.622);
+            }
+          }
+        }
+        .item-1,
+        .item-2,
+        .item-3,
+        .item-4,
+        .item-5,
+        .item-6,
+        .item-7 {
+          text-align: center;
+          a {
+            text-decoration: none;
+            color: #575757;
+            font-weight: 300;
+            font-size: 15px;
+            transition: 0.5s;
+          }
+          a:hover {
+            color: black;
+          }
+        }
+        .item-1 {
+          grid-area: cur;
+        }
+        .item-2 {
+          grid-area: store;
+        }
+        .item-3 {
+          grid-area: customer;
+        }
+        .item-4 {
+          grid-area: balmain;
+        }
+        .item-5 {
+          grid-area: sign;
+        }
+        .item-6 {
+          grid-area: acc;
+        }
+        .item-7 {
+          grid-area: help;
+        }
+      }
+      @media (min-width: 576px) {
+        .grid-container {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-areas:
+            "balmain"
+            "cur"
+            "store"
+            "customer"
+            "sign"
+            "acc"
+            "help";
+        }
+      }
+      @media (min-width: 990px) {
+        .grid-container {
+          grid-template-columns: repeat(7, 1fr);
+          grid-template-areas: "cur store customer balmain sign acc help";
+        }
+      }
+      #more-nav {
+        margin-top: 3vw;
+        margin-bottom: 2.5vw;
+        .container-fluid {
+          .row {
+            .navnav {
+              ul {
+                padding: 0;
+                list-style-type: none;
+                li {
+                  a {
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 17px;
+                    color: #474747;
+                    transition: 0.5s;
+                  }
+                  a:hover {
+                    color: black;
+                  }
+                }
+              }
+            }
+            .icons {
+              a {
+                text-decoration: none;
+                i {
+                  color: black;
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    main {
+      #ad {
+        .bring-ad {
+          background: black url(/assets/images/ad.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          .row {
+            .bringing {
+              padding: 20vw 5vw 1vw 20vw;
+              color: white;
+              h3 {
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 25px;
+              }
+              p {
+                font-weight: 300;
+                font-size: 25px;
+              }
+            }
+            .linkuni {
+              padding-top: 2vw;
+              padding-left: 3vw;
+              padding-bottom: 15vw;
+              a {
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 300;
+                border: 1px solid white;
+                border-radius: 30px;
+                padding: 1.2vw 7vw;
+                transition: 0.7s;
+              }
+              a:hover {
+                color: rgb(139, 139, 139);
+                border: 1px solid rgb(139, 139, 139);
+              }
+            }
+          }
+        }
+      }
+      #new {
+        .what-new {
+          padding-top: 4vw;
+          h3 {
+            margin-bottom: 4vw;
+          }
+          .row {
+            .new-text {
+              padding-left: 15vw;
+            }
+          }
+        }
+        .owlcar {
+          padding: 0;
+          padding-bottom: 5vw;
+          .owl-carousel {
+            .product-container {
+              .card {
+                width: 23vw;
+                border: none;
+                .carousel {
+                  .carousel-inner {
+                    .carousel-item {
+                      background-color: #f5f5f5;
+                      border: 1px solid transparent;
+                      border-radius: 25px;
+                    }
+                  }
+                  button {
+                    span {
+                      i {
+                        color: black;
+                        font-size: 25px;
+                      }
+                    }
+                  }
+                }
+                .card-body {
+                  position: relative;
+                  min-height: 13vw;
+                  .pre-order {
+                    font-weight: 250;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 25px;
+                  }
+                  .pre-order:hover {
+                    text-decoration: underline;
+                  }
+                  .card-title {
+                    font-weight: 400;
+                    font-size: 25px;
+                  }
+                  .card-text {
+                    position: absolute;
+                    bottom: 0;
+                    .price {
+                      font-weight: 250;
+                      font-size: 25px;
+                    }
+                    .color-cont {
+                      padding: 0;
+                      .color-sw {
+                        border: 1px solid transparent;
+                        border-radius: 50%;
+                        width: 20px;
+                        height: 20px;
+                      }
+                    }
+                  }
+                }
+              }
+              @media (max-width: 576px) {
+                .card {
+                  width: 50vw !important;
+                  .card-body {
+                    min-height: 45vw !important;
+                  }
+                }
+              }
+              @media (max-width: 991px) {
+                .card {
+                  width: 30vw;
+                  .card-body {
+                    min-height: 25vw;
+                    .card-text {
+                      margin-top: 5vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      #categories {
+        .category {
+          .row {
+            .col {
+              h3 {
+                padding-left: 15vw;
+              }
+              .owl-carousel {
+                margin-top: 3vw;
+                .category-container {
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  border: 1px solid transparent;
+                  border-radius: 25px;
+                  a {
+                    text-decoration: none;
+                  }
+                  h4 {
+                    padding: 20vw 0vw 1.4vw 3vw;
+                    color: white;
+                    text-transform: uppercase;
+                    transition: 0.5s;
+                  }
+                  h4:hover {
+                    color: rgb(255, 0, 0);
+                  }
+                }
+                .newin {
+                  background: black url(/assets/images/newin.png);
+                }
+                .bags {
+                  background: black url(/assets/images/bags.png);
+                }
+              }
+            }
+          }
+        }
+      }
+      #stranger-things {
+        margin-top: 2vw;
+        background-image: url(/assets/images/sthings.png);
+        width: 100%;
+        padding: 0;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        .container-fluid {
+          .row {
+            .col {
+              .collab-text {
+                text-align: center;
+                padding: 25vw 5vw;
+                color: white;
+                font-size: 37px;
+                font-weight: 900;
+                text-decoration: none;
+                span {
+                  font-weight: 200;
+                }
+                .shop-link {
+                  a {
+                    text-decoration: none;
+                    padding: 0.6vw 3.5vw;
+                    border: 1px solid white;
+                    border-radius: 25px;
+                    color: white;
+                    font-weight: 400;
+                    font-size: 17px;
+                    text-transform: uppercase;
+                    transition: 0.5s;
+                  }
+                  a:hover {
+                    color: red;
+                    border-color: red;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      #accessories {
+        margin-top: -7vw;
+        background-image: url(/assets/images/acc.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .container-fluid {
+          .row {
+            padding: 20vw 0;
+            .accmenu {
+              left: 0;
+              position: relative;
+              color: white;
+              button {
+                color: black;
+                background-color: white;
+                border: 1px solid white;
+                font-weight: 200;
+                text-transform: uppercase;
+                position: absolute;
+                font-size: 35px;
+                margin-left: -6vw;
+                transform: rotate(-90deg);
+              }
+              button:hover {
+                text-decoration: underline;
+              }
+            }
+            .jew {
+              background-image: url(/assets/images/jewelery.png);
+              background-repeat: no-repeat;
+              background-position: center;
+              a {
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 35px;
+                p {
+                  margin-top: 20vw;
+                  transition: 0.9s;
+                }
+                p:hover {
+                  color: red;
+                }
+              }
+            }
+            .belt {
+              background-image: url(/assets/images/belts.png);
+              background-repeat: no-repeat;
+              background-position: center;
+              a {
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 35px;
+                p {
+                  margin-top: 20vw;
+                  transition: 0.9s;
+                }
+                p:hover {
+                  color: red;
+                }
+              }
+            }
+            .hats {
+              background-image: url(/assets/images/hats.png);
+              background-repeat: no-repeat;
+              background-position: center;
+              a {
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 35px;
+                p {
+                  margin-top: 20vw;
+                  transition: 0.9s;
+                }
+                p:hover {
+                  color: red;
+                }
+              }
+            }
+          }
+        }
+      }
+      #shop-with-us {
+        margin-top: 7vw;
+        border-bottom: 0.25px solid black;
+        padding-bottom: 7vw;
+        .container {
+          .row {
+            .col {
+              h3 {
+                padding-left: 2vw;
+                font-weight: 500;
+                font-size: 35px;
+                text-transform: uppercase;
+              }
+            }
+            .woman {
+              background-image: url(/assets/images/womaness.png);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+              border: 1px solid transparent;
+              border-radius: 25px;
+              a {
+                text-decoration: none;
+                font-size: 23px;
+                font-weight: 700;
+                p {
+                  padding-top: 30vw;
+                  transition: 0.5s;
+                  text-align: center;
+                  color: white;
+                }
+                p:hover {
+                  color: red;
+                }
+              }
+            }
+            .man {
+              background-image: url(/assets/images/maness.png);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+              border: 1px solid transparent;
+              a {
+                text-decoration: none;
+                font-size: 23px;
+                font-weight: 700;
+                p {
+                  padding-top: 30vw;
+                  text-align: center;
+                  color: white;
+                  transition: 0.5s;
+                }
+                p:hover {
+                  color: red;
+                }
+              }
+            }
+          }
+          .sec {
+            margin-top: 3vw;
+          }
+        }
+      }
+      #balmain-logo {
+        padding: 3vw 0;
+        border-bottom: 0.25px solid black;
+        margin-bottom: 4vw;
+        .container-fluid {
+          .row {
+            .col {
+              img {
+                text-align: center;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    footer {
+      #socials {
+        margin-bottom: 4vw;
+        .container-fluid {
+          .row {
+            .second {
+              ul {
+                padding: 0;
+                list-style-type: none;
+              }
+            }
+          }
+        }
+      }
+      #prelast-footer {
+        .container-fluid {
+          .row {
+            .custcust {
+              .customer {
+                h4 {
+                  font-weight: 500;
+                  font-size: 20px;
+                  text-transform: uppercase;
+                  margin-bottom: 1vw;
+                }
+                ul {
+                  padding: 0;
+                  list-style-type: none;
+                  li {
+                    margin-bottom: 0.4vw;
+                    a {
+                      text-decoration: none;
+                      color: black;
+                      font-weight: 300;
+                      font-size: 17px;
+                      transition: 0.5s;
+                    }
+                    a:hover {
+                      color: red;
+                    }
+                  }
+                }
+              }
+            }
+            .polpol {
+              .policy {
+                h4 {
+                  font-weight: 500;
+                  font-size: 20px;
+                  text-transform: uppercase;
+                  margin-bottom: 1vw;
+                }
+                ul {
+                  padding: 0;
+                  list-style-type: none;
+                  li {
+                    margin-bottom: 0.4vw;
+                    a {
+                      text-decoration: none;
+                      color: black;
+                      font-weight: 300;
+                      font-size: 17px;
+                      transition: 0.5s;
+                    }
+                    a:hover {
+                      color: red;
+                    }
+                  }
+                }
+              }
+            }
+            .secsec {
+              .security {
+                h4 {
+                  font-weight: 500;
+                  font-size: 20px;
+                  text-transform: uppercase;
+                  margin-bottom: 1vw;
+                }
+                p {
+                  font-weight: 300;
+                }
+                p:hover {
+                  text-decoration: underline;
+                }
+                img {
+                  margin-top: 2vw;
+                }
+              }
+            }
+          }
+        }
+      }
+      #last {
+        margin-top: 2vw;
+        background-color: black;
+        .container-fluid {
+          .row {
+            .rights,
+            .id {
+              padding: 0;
+              h4 {
+                padding: 1vw 0;
+                color: white;
+                font-size: 17px;
+                font-weight: 300;
+                text-align: center;
+                vertical-align: ceil($number: 0);
+                transition: 0.5s;
+              }
+              h4:hover {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    body {
+      header {
+        margin-top: 5vw;
+        .grid-container {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-areas:
+            "balmain"
+            "cur"
+            "store"
+            "customer"
+            "sign"
+            "acc"
+            "help";
+          .item-1 {
+            .dropdown-content {
+              background: white;
+            }
+          }
+        }
+        #more-nav {
+          .container-fluid {
+            .row {
+              .navnav {
+                ul {
+                  display: flex;
+                  flex-direction: column;
+                }
+              }
+            }
+          }
+        }
+      }
+      main {
+        #ad {
+          .brin-ad {
+            .row {
+              .bringing {
+                padding: 0;
+                h3 {
+                  text-align: center;
+                }
+                p {
+                  text-align: center;
+                }
+              }
+            }
+            .row {
+              .linkuni {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+        }
+        #new {
+          .what-new {
+            .row {
+              .new-text {
+                padding: 0;
+                h3 {
+                  text-align: center;
+                }
+              }
+              .owlcar {
+                .owl-carousel {
+                  .product-container {
+                    margin: 0;
+                    width: 160px;
+                    .card {
+                      display: flex;
+                      justify-content: center;
+                      .card-body {
+                        .pre-order {
+                          font-size: 15px;
+                        }
+                        h5 {
+                          font-size: 20px;
+                        }
+                        .card-text {
+                          p {
+                            margin-top: 10px;
+                            margin-bottom: 0;
+                            font-size: 15px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        #categories {
+          .category {
+            .row {
+              .cat-text {
+                h3 {
+                  padding: 0;
+                  text-align: center;
+                }
+              }
+              .owlcar {
+                .owl-carousel {
+                  .category-container {
+                    a {
+                      h4 {
+                        font-size: 15px;
+                        padding-top: 60vw;
+                        text-align: center;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        #stranger-things {
+          .container-fluid {
+            .row {
+              .col {
+                .collab-text {
+                  font-size: 15px;
+                  .shop-link {
+                    padding-top: 2vw;
+                    a {
+                      font-size: 10px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        #accessories {
+          .container-fluid {
+            .row {
+              .accmenu {
+                display: flex;
+                justify-content: center;
+                button {
+                  rotate: 90deg;
+                }
+              }
+            }
+          }
+        }
+        #shop-with-us {
+          .container {
+            .row {
+              .col {
+                h3 {
+                  text-align: center;
+                }
+              }
+            }
+            .sec {
+              .woman,
+              .man {
+                a {
+                  p {
+                    font-size: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      footer {
+        #prelast-footer {
+          .container-fluid {
+            .row {
+              .custcust {
+                .customer {
+                  h4 {
+                    text-align: center;
+                  }
+                  ul {
+                    li {
+                      text-align: center;
+                    }
+                  }
+                }
+              }
+              .polpol {
+                .policy {
+                  h4 {
+                    text-align: center;
+                  }
+                  ul {
+                    li {
+                      text-align: center;
+                    }
+                  }
+                }
+              }
+              .secsec {
+                .security {
+                  h4 {
+                    text-align: center;
+                  }
+                  p {
+                    text-align: center;
+                  }
+                  a {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    img {
+                      text-align: center;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// padding: 20vw 20vw 1vw 20vw;  default padding res
+//  padding-left: 15vw; def val

@@ -1,0 +1,537 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+* body header {
+  margin-top: 2vw;
+}
+* body header .grid-container {
+  border-bottom: 0.25px solid black;
+  padding-bottom: 2vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+* body header .grid-container .item-1 button {
+  color: #575757;
+  padding: 0;
+  font-weight: 300;
+  letter-spacing: 11%;
+  transition: 0.5s;
+  font-size: 15px;
+}
+* body header .grid-container .item-1 button:hover {
+  color: black;
+}
+* body header .grid-container .item-1 .dropdown {
+  position: relative;
+  display: inline-block;
+}
+* body header .grid-container .item-1 .dropdown:hover .dropdown-content {
+  display: block;
+}
+* body header .grid-container .item-1 .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+* body header .grid-container .item-1 .dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 1vw 2vw;
+  transition: 0.5s;
+}
+* body header .grid-container .item-1 .dropdown-content a:hover {
+  color: red;
+  background-color: rgba(233, 233, 233, 0.622);
+}
+* body header .grid-container .item-1,
+* body header .grid-container .item-2,
+* body header .grid-container .item-3,
+* body header .grid-container .item-4,
+* body header .grid-container .item-5,
+* body header .grid-container .item-6,
+* body header .grid-container .item-7 {
+  text-align: center;
+}
+* body header .grid-container .item-1 a,
+* body header .grid-container .item-2 a,
+* body header .grid-container .item-3 a,
+* body header .grid-container .item-4 a,
+* body header .grid-container .item-5 a,
+* body header .grid-container .item-6 a,
+* body header .grid-container .item-7 a {
+  text-decoration: none;
+  color: #575757;
+  font-weight: 300;
+  font-size: 15px;
+  transition: 0.5s;
+}
+* body header .grid-container .item-1 a:hover,
+* body header .grid-container .item-2 a:hover,
+* body header .grid-container .item-3 a:hover,
+* body header .grid-container .item-4 a:hover,
+* body header .grid-container .item-5 a:hover,
+* body header .grid-container .item-6 a:hover,
+* body header .grid-container .item-7 a:hover {
+  color: black;
+}
+* body header .grid-container .item-1 {
+  grid-area: cur;
+}
+* body header .grid-container .item-2 {
+  grid-area: store;
+}
+* body header .grid-container .item-3 {
+  grid-area: customer;
+}
+* body header .grid-container .item-4 {
+  grid-area: balmain;
+}
+* body header .grid-container .item-5 {
+  grid-area: sign;
+}
+* body header .grid-container .item-6 {
+  grid-area: acc;
+}
+* body header .grid-container .item-7 {
+  grid-area: help;
+}
+@media (min-width: 576px) {
+  * body header .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "balmain" "cur" "store" "customer" "sign" "acc" "help";
+  }
+}
+@media (min-width: 990px) {
+  * body header .grid-container {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: "cur store customer balmain sign acc help";
+  }
+}
+* body header #more-nav {
+  margin-top: 3vw;
+  margin-bottom: 2.5vw;
+}
+* body header #more-nav .container-fluid .row .navnav ul {
+  padding: 0;
+  list-style-type: none;
+}
+* body header #more-nav .container-fluid .row .navnav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  color: #474747;
+  transition: 0.5s;
+}
+* body header #more-nav .container-fluid .row .navnav ul li a:hover {
+  color: black;
+}
+* body header #more-nav .container-fluid .row .icons a {
+  text-decoration: none;
+}
+* body header #more-nav .container-fluid .row .icons a i {
+  color: black;
+  font-size: 20px;
+}
+* body main {
+  margin-top: 1vw;
+}
+* body main #main-bag .text-cont h3 {
+  font-size: 45px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+* body main #main {
+  margin-top: 1vw;
+  border-bottom: 0.25px solid black;
+  padding-bottom: 7vw;
+}
+* body main #main .container .row .first-col .log-form .radio-group {
+  font-weight: 200;
+  font-size: 15px;
+}
+* body main #main .container .row .first-col .log-form .name-gr {
+  margin-top: 1vw;
+}
+* body main #main .container .row .first-col .log-form #email,
+* body main #main .container .row .first-col .log-form #password,
+* body main #main .container .row .first-col .log-form #name,
+* body main #main .container .row .first-col .log-form #lastname,
+* body main #main .container .row .first-col .log-form #address,
+* body main #main .container .row .first-col .log-form #apt,
+* body main #main .container .row .first-col .log-form #city {
+  margin-top: 1vw;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 1vw 4vw 1vw 1vw;
+  text-align: left;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+}
+* body main #main .container .row .first-col .log-form #password {
+  margin-top: 1vw;
+}
+* body main #main .container .row .first-col .log-form .autotabbed {
+  margin-top: 4vw;
+}
+* body main #main .container .row .first-col .log-form .autotabbed h3 {
+  font-weight: 20px;
+  font-size: 20px;
+  color: black;
+}
+* body main #main .container .row .first-col .log-form .autotabbed input {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 1vw;
+}
+* body main #main .container .row .first-col .log-form .sign-rad {
+  margin-top: 3vw;
+}
+* body main #main .container .row .first-col .log-form .sign-rad label {
+  font-weight: 250;
+  font-size: 15px;
+}
+* body main #main .container .row .first-col .log-form .loginbtn {
+  transition: 0.5s;
+  margin-top: 2vw;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 0.8vw;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+* body main #main .container .row .first-col .log-form .loginbtn:hover {
+  background-color: rgb(67, 67, 67);
+  border-color: rgb(67, 67, 67);
+}
+* body main #main .container .row .first-col .log-form .input-group {
+  margin-top: 1vw;
+}
+* body main #main .container .row .first-col .log-form .input-group .form-control {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 1vw 4vw 1vw 1vw;
+  text-align: left;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+}
+* body main #main .container .row .first-col .log-form .input-group button {
+  border-bottom: 1px solid black;
+}
+* body main #main .container .row .imgcol #promo .accordion-panel {
+  transition: 0.5s;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  .accordion-border: none;
+}
+* body main #main .container .row .imgcol #promo .accordion-panel .accordion {
+  color: #000000;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.4s;
+  letter-spacing: 11%;
+  background-color: transparent;
+  padding: 1vw;
+}
+* body main #main .container .row .imgcol #promo .accordion-panel .accordion:after {
+  content: "+";
+  color: #000000;
+  float: right;
+  margin-left: 5px;
+  font-weight: 200;
+  font-size: 20px;
+}
+* body main #main .container .row .imgcol #promo .accordion-panel .active:after {
+  content: "−";
+}
+* body main #main .container .row .imgcol #promo .accordion-panel .panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+* body main #main .container .row .imgcol #promo .accordion-panel .panel input {
+  border: none;
+  border-bottom: 1px solid black;
+}
+* body main #main .container .row .imgcol #promo .accordion-panel .panel button {
+  background-color: black;
+  padding: 0.5vw;
+  color: white;
+  text-transform: uppercase;
+}
+* body main #main .container .row .imgcol #promo .accordion-panel:hover {
+  border-color: black;
+}
+* body main #main .container .row .imgcol #summary {
+  margin-top: 2vw;
+  padding: 1vw;
+  border: 0.25px solid rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+}
+* body main #main .container .row .imgcol #summary h5 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #0e0d0d;
+  text-transform: uppercase;
+}
+* body main #main .container .row .imgcol #summary .subtotal p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+* body main #main .container .row .imgcol #summary .shipping p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+* body main #main .container .row .imgcol #summary .tax {
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+}
+* body main #main .container .row .imgcol #estimate {
+  margin-top: 2vw;
+  padding: 1vw;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+* body main #main .container .row .imgcol #estimate p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #020202;
+  padding: 0;
+  text-transform: uppercase;
+  margin: 0;
+}
+* body main #main .container .row .imgcol #shop-bag {
+  margin-top: 3vw;
+}
+* body main #main .container .row .imgcol #shop-bag h5 {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+* body main #main .container .row .imgcol #shop-bag .product-cont {
+  margin-top: 2vw;
+  border: 0.25px solid black;
+  border-radius: 20px;
+  padding: 1vw;
+}
+* body main #main .container .row .imgcol #shop-bag .product-cont .image-container a img {
+  width: 100%;
+}
+* body main #main .container .row .imgcol #shop-bag .product-cont .rest-container p {
+  font-weight: 400;
+  font-size: 15px;
+}
+* body main #main .container .row .imgcol #shop-bag .product-cont .rest-container p span {
+  font-weight: 500;
+  font-size: 15px;
+}
+* body main #main .container .row .imgcol #shop-bag .product-cont .rest-container .name {
+  font-weight: 500;
+  font-size: 15px;
+}
+* body main #main .container .row .imgcol #shop-bag .product-cont .rest-container .money-qty p {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+}
+* body main #main .container .row .imgcol #shop-bag .product-cont .rest-container .money-qty .qty-container button {
+  border: 1px solid black;
+  width: 25px;
+  height: 25px;
+}
+* body main #main .container .row .imgcol #shop-bag .product-cont .rest-container .money-qty .qty-container input {
+  border: 0.25px solid black;
+  padding: 6px 12px;
+  width: 25px;
+  height: 25px;
+}
+* body main #main .container .row .imgcol #shop-bag .product-cont .rest-container .edit-remove {
+  margin-top: 1vw;
+}
+* body main #main .container .row .imgcol #shop-bag .product-cont .rest-container .edit-remove a {
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+}
+* body main #main .container .row .imgcol #shop-bag .product-cont .rest-container .edit-remove button {
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0;
+}
+* body main #balmain-logo {
+  padding: 3vw 0;
+  border-bottom: 0.25px solid black;
+  border-top: 0.25px solid black;
+  margin-bottom: 4vw;
+}
+* body main #balmain-logo .container-fluid .row .col img {
+  text-align: center;
+  width: 100%;
+}
+* body footer #socials {
+  margin-bottom: 4vw;
+}
+* body footer #socials .container-fluid .row .second ul {
+  padding: 0;
+  list-style-type: none;
+}
+* body footer #prelast-footer .container-fluid .row .custcust .customer h4 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+* body footer #prelast-footer .container-fluid .row .custcust .customer ul {
+  padding: 0;
+  list-style-type: none;
+}
+* body footer #prelast-footer .container-fluid .row .custcust .customer ul li {
+  margin-bottom: 0.4vw;
+}
+* body footer #prelast-footer .container-fluid .row .custcust .customer ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: 17px;
+  transition: 0.5s;
+}
+* body footer #prelast-footer .container-fluid .row .custcust .customer ul li a:hover {
+  color: red;
+}
+* body footer #prelast-footer .container-fluid .row .polpol .policy h4 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+* body footer #prelast-footer .container-fluid .row .polpol .policy ul {
+  padding: 0;
+  list-style-type: none;
+}
+* body footer #prelast-footer .container-fluid .row .polpol .policy ul li {
+  margin-bottom: 0.4vw;
+}
+* body footer #prelast-footer .container-fluid .row .polpol .policy ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: 17px;
+  transition: 0.5s;
+}
+* body footer #prelast-footer .container-fluid .row .polpol .policy ul li a:hover {
+  color: red;
+}
+* body footer #prelast-footer .container-fluid .row .secsec .security h4 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+* body footer #prelast-footer .container-fluid .row .secsec .security p {
+  font-weight: 300;
+}
+* body footer #prelast-footer .container-fluid .row .secsec .security p:hover {
+  text-decoration: underline;
+}
+* body footer #prelast-footer .container-fluid .row .secsec .security img {
+  margin-top: 2vw;
+}
+* body footer #last {
+  margin-top: 2vw;
+  background-color: black;
+}
+* body footer #last .container-fluid .row .rights,
+* body footer #last .container-fluid .row .id {
+  padding: 0;
+}
+* body footer #last .container-fluid .row .rights h4,
+* body footer #last .container-fluid .row .id h4 {
+  padding: 1vw 0;
+  color: white;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+  vertical-align: 0;
+  transition: 0.5s;
+}
+* body footer #last .container-fluid .row .rights h4:hover,
+* body footer #last .container-fluid .row .id h4:hover {
+  color: red;
+}
+
+@media screen and (max-width: 760px) {
+  * body header {
+    margin-top: 5vw;
+  }
+  * body header .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "balmain" "cur" "store" "customer" "sign" "acc" "help";
+  }
+  * body header .grid-container .item-1 .dropdown-content {
+    background: white;
+  }
+  * body header #more-nav .container-fluid .row .navnav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  * body main #main-bag .text-cont h3 {
+    text-align: center;
+  }
+  * body main #main .container .row .first-col .log-form .name-gr {
+    display: flex;
+    flex-direction: column;
+  }
+  * body main #main .container .row .first-col .log-form .loginbtn {
+    margin-top: 10px;
+  }
+  * body main #main .container .row .imgcol #promo {
+    margin-top: 15px;
+  }
+  * body footer #prelast-footer .container-fluid .row .custcust .customer h4 {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .custcust .customer ul li {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .polpol .policy h4 {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .polpol .policy ul li {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .secsec .security h4 {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .secsec .security p {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .secsec .security a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .secsec .security a img {
+    text-align: center;
+  }
+}/*# sourceMappingURL=guestcheckout.css.map */

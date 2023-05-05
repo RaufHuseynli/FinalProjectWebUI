@@ -1,0 +1,621 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+* body header {
+  margin-top: 2vw;
+}
+* body header .grid-container {
+  border-bottom: 0.25px solid black;
+  padding-bottom: 2vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+* body header .grid-container .item-1 button {
+  color: #575757;
+  padding: 0;
+  font-weight: 300;
+  letter-spacing: 11%;
+  transition: 0.5s;
+  font-size: 15px;
+}
+* body header .grid-container .item-1 button:hover {
+  color: black;
+}
+* body header .grid-container .item-1 .dropdown {
+  position: relative;
+  display: inline-block;
+}
+* body header .grid-container .item-1 .dropdown:hover .dropdown-content {
+  display: block;
+}
+* body header .grid-container .item-1 .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+* body header .grid-container .item-1 .dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 1vw 2vw;
+  transition: 0.5s;
+}
+* body header .grid-container .item-1 .dropdown-content a:hover {
+  color: red;
+  background-color: rgba(233, 233, 233, 0.622);
+}
+* body header .grid-container .item-1,
+* body header .grid-container .item-2,
+* body header .grid-container .item-3,
+* body header .grid-container .item-4,
+* body header .grid-container .item-5,
+* body header .grid-container .item-6,
+* body header .grid-container .item-7 {
+  text-align: center;
+}
+* body header .grid-container .item-1 a,
+* body header .grid-container .item-2 a,
+* body header .grid-container .item-3 a,
+* body header .grid-container .item-4 a,
+* body header .grid-container .item-5 a,
+* body header .grid-container .item-6 a,
+* body header .grid-container .item-7 a {
+  text-decoration: none;
+  color: #575757;
+  font-weight: 300;
+  font-size: 15px;
+  transition: 0.5s;
+}
+* body header .grid-container .item-1 a:hover,
+* body header .grid-container .item-2 a:hover,
+* body header .grid-container .item-3 a:hover,
+* body header .grid-container .item-4 a:hover,
+* body header .grid-container .item-5 a:hover,
+* body header .grid-container .item-6 a:hover,
+* body header .grid-container .item-7 a:hover {
+  color: black;
+}
+* body header .grid-container .item-1 {
+  grid-area: cur;
+}
+* body header .grid-container .item-2 {
+  grid-area: store;
+}
+* body header .grid-container .item-3 {
+  grid-area: customer;
+}
+* body header .grid-container .item-4 {
+  grid-area: balmain;
+}
+* body header .grid-container .item-5 {
+  grid-area: sign;
+}
+* body header .grid-container .item-6 {
+  grid-area: acc;
+}
+* body header .grid-container .item-7 {
+  grid-area: help;
+}
+@media (min-width: 576px) {
+  * body header .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "balmain" "cur" "store" "customer" "sign" "acc" "help";
+  }
+}
+@media (min-width: 990px) {
+  * body header .grid-container {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: "cur store customer balmain sign acc help";
+  }
+}
+* body header #more-nav {
+  margin-top: 3vw;
+  margin-bottom: 2.5vw;
+}
+* body header #more-nav .container-fluid .row .navnav ul {
+  padding: 0;
+  list-style-type: none;
+}
+* body header #more-nav .container-fluid .row .navnav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  color: #474747;
+  transition: 0.5s;
+}
+* body header #more-nav .container-fluid .row .navnav ul li a:hover {
+  color: black;
+}
+* body header #more-nav .container-fluid .row .icons a {
+  text-decoration: none;
+}
+* body header #more-nav .container-fluid .row .icons a i {
+  color: black;
+  font-size: 20px;
+}
+* body main #arrivals {
+  background-image: url(/assets/images/kate.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+* body main #arrivals .container-fluid {
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+}
+* body main #arrivals .container-fluid .row .newarr a {
+  text-decoration: none;
+  color: white;
+}
+* body main #arrivals .container-fluid .row .newarr a h2 {
+  font-weight: 700;
+  font-size: 55px;
+}
+* body main #arrivals .container-fluid .row .arrinfo p {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+}
+* body main #filtration-products {
+  margin-top: 3vw;
+}
+* body main #filtration-products .container .row .filter button p,
+* body main #filtration-products .container .row .online button p {
+  font-size: 17px;
+  font-weight: 500;
+  color: #141313;
+  text-transform: uppercase;
+}
+* body main #filtration-products .container .row .online button p {
+  text-transform: capitalize;
+  color: #000000;
+}
+* body main #filtration-products .container .row .dropd .first span p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 11%;
+}
+* body main #filtration-products .container .row .dropd .first span .dropbtn {
+  color: black;
+  padding: 0;
+  font-weight: 500;
+  letter-spacing: 11%;
+  font-size: 17px;
+}
+* body main #filtration-products .container .row .dropd .first span .dropbtn i {
+  color: black;
+  padding: 0;
+  font-size: 17px;
+}
+* body main #filtration-products .container .row .dropd .first span .dropdown {
+  position: relative;
+  display: inline-block;
+}
+* body main #filtration-products .container .row .dropd .first span .dropdown:hover .dropdown-content {
+  display: block;
+}
+* body main #filtration-products .container .row .dropd .first span .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+* body main #filtration-products .container .row .dropd .first span .dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 1vw 2vw;
+  transition: 0.5s;
+}
+* body main #filtration-products .container .row .dropd .first span .dropdown-content a:hover {
+  color: red;
+  background-color: rgba(233, 233, 233, 0.622);
+}
+* body main #product-list {
+  margin-top: 7vw;
+  margin-bottom: 10vw;
+}
+* body main #product-list .container .grid-container {
+  display: grid;
+  grid-column-gap: 5rem;
+  grid-row-gap: 5rem;
+}
+* body main #product-list .container .grid-container .grid-item {
+  border: none;
+}
+* body main #product-list .container .grid-container .grid-item .product-container {
+  margin-top: 3vw;
+  width: 23vw;
+  height: 40vw;
+}
+* body main #product-list .container .grid-container .grid-item .product-container .productimgg {
+  width: 23vw;
+  height: 40vw;
+}
+* body main #product-list .container .grid-container .grid-item .product-container .card {
+  display: block;
+  border: none;
+  min-width: 25vw;
+}
+* body main #product-list .container .grid-container .grid-item .product-container .card a img {
+  width: 100%;
+}
+* body main #product-list .container .grid-container .grid-item .product-container .card .all-set .carousel-inner .carousel-item {
+  background-color: #f5f5f5;
+  border: 1px solid transparent;
+  border-radius: 25px;
+}
+* body main #product-list .container .grid-container .grid-item .product-container .card .all-set span {
+  color: pink;
+}
+* body main #product-list .container .grid-container .grid-item .product-container .card .all-set span i {
+  color: #0c0b0b;
+  font-size: 25px;
+}
+* body main #product-list .container .grid-container .grid-item .product-container .card .card-body {
+  margin-top: 3vw;
+}
+* body main #product-list .container .grid-container .grid-item .product-container .card .card-body a {
+  text-decoration: none;
+}
+* body main #product-list .container .grid-container .grid-item .product-container .card .card-body a .card-title {
+  font-weight: 500;
+  font-size: 25px;
+  color: black;
+  transition: 0.5s;
+  display: inline;
+}
+* body main #product-list .container .grid-container .grid-item .product-container .card .card-body a .card-title:hover {
+  border-bottom: 0.5px solid rgb(0, 0, 0);
+}
+* body main #product-list .container .grid-container .grid-item .product-container .card .card-body a .card-text {
+  margin-top: 2vw;
+  transition: 0.5s;
+  font-weight: 250;
+  color: black;
+  font-size: 25px;
+}
+* body main #product-list .container .grid-container .grid-item .product-container .card .card-body a .card-text button .color-swatch {
+  border: 1px solid gray;
+  border-radius: 50%;
+  background-color: black;
+  width: 20px !important;
+  height: 20px !important;
+  transition: 0.5s;
+}
+* body main #product-list .container .grid-container .grid-item .product-container .card .card-body a .card-text button .color-swatch:hover {
+  border: 1px solid rgb(255, 0, 0);
+}
+* body main #product-list .container .grid-container .grid-1 .product-container {
+  display: flex;
+  justify-content: flex-enx;
+}
+* body main #product-list .container .grid-container .grid-1 .product-container .card a img {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  * body main #product-list .container .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 990px) {
+  * body main #product-list .container .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+* body main #more-link {
+  margin-top: 13vw;
+}
+* body main #more-link .container-fluid .row .morre button {
+  background-color: #131212;
+  color: #fffafa;
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5%;
+  padding: 0.8vw 3.5vw;
+  border: 1px solid #131212;
+  border-radius: 35px;
+  transition: 0.5s;
+}
+* body main #more-link .container-fluid .row .morre button:hover {
+  background-image: linear-gradient(to left, black, rgba(100, 93, 93, 0.3137254902), rgba(152, 149, 149, 0.662745098));
+  border: 1px solid rgba(100, 93, 93, 0.5019607843);
+}
+* body main #more-link .container-fluid .row .all {
+  margin-top: 1vw;
+}
+* body main #more-link .container-fluid .row .all button {
+  font-weight: 300;
+  font-size: 25px;
+  letter-spacing: 0.5%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: rgba(80, 80, 80, 0.841);
+  transition: 0.5s;
+}
+* body main #more-link .container-fluid .row .all button:hover {
+  color: black;
+}
+* body main #explore {
+  margin-top: 8vw;
+  border-bottom: 0.25px solid black;
+  padding-bottom: 7vw;
+}
+* body main #explore .container .row .explre h5 {
+  font-weight: 400;
+  font-size: 21px;
+  color: rgb(0, 0, 0);
+}
+* body main #explore .container .row .link-navs {
+  margin-top: 2vw;
+}
+* body main #explore .container .row .link-navs a {
+  color: rgb(129, 127, 127);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5vw 2vw;
+  border: 1px solid rgb(129, 127, 127);
+  border-radius: 35px;
+  letter-spacing: 11%;
+  transition: 0.5s;
+}
+* body main #explore .container .row .link-navs a:not(:first-child) {
+  margin-left: 1vw;
+}
+* body main #explore .container .row .link-navs a:hover {
+  color: black;
+  border-color: black;
+}
+* body main #explore .container .pic-navs {
+  margin-top: 4vw;
+}
+* body main #explore .container .pic-navs .rtw {
+  background-image: url(/assets/images/rtw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+* body main #explore .container .pic-navs .rtw a {
+  padding-top: 32vw;
+  padding-bottom: 2vw;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.5s;
+}
+* body main #explore .container .pic-navs .rtw a:hover {
+  color: red;
+}
+* body main #explore .container .pic-navs .all-three {
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+* body main #explore .container .pic-navs .bags {
+  background-image: url(/assets/images/redbag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+* body main #explore .container .pic-navs .bags a {
+  padding-top: 32vw;
+  padding-bottom: 2vw;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.5s;
+}
+* body main #explore .container .pic-navs .bags a:hover {
+  color: red;
+}
+* body main #explore .container .pic-navs .shoes {
+  background-image: url(/assets/images/redshoes.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+* body main #explore .container .pic-navs .shoes a {
+  padding-top: 32vw;
+  padding-bottom: 2vw;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.5s;
+}
+* body main #explore .container .pic-navs .shoes a:hover {
+  color: red;
+}
+* body main #balmain-logo {
+  padding: 3vw 0;
+  border-bottom: 0.25px solid black;
+  margin-bottom: 4vw;
+}
+* body main #balmain-logo .container-fluid .row .col img {
+  text-align: center;
+  width: 100%;
+}
+* body footer #socials {
+  margin-bottom: 4vw;
+}
+* body footer #socials .container-fluid .row .second ul {
+  padding: 0;
+  list-style-type: none;
+}
+* body footer #prelast-footer .container-fluid .row .custcust .customer h4 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+* body footer #prelast-footer .container-fluid .row .custcust .customer ul {
+  padding: 0;
+  list-style-type: none;
+}
+* body footer #prelast-footer .container-fluid .row .custcust .customer ul li {
+  margin-bottom: 0.4vw;
+}
+* body footer #prelast-footer .container-fluid .row .custcust .customer ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: 17px;
+  transition: 0.5s;
+}
+* body footer #prelast-footer .container-fluid .row .custcust .customer ul li a:hover {
+  color: red;
+}
+* body footer #prelast-footer .container-fluid .row .polpol .policy h4 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+* body footer #prelast-footer .container-fluid .row .polpol .policy ul {
+  padding: 0;
+  list-style-type: none;
+}
+* body footer #prelast-footer .container-fluid .row .polpol .policy ul li {
+  margin-bottom: 0.4vw;
+}
+* body footer #prelast-footer .container-fluid .row .polpol .policy ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: 17px;
+  transition: 0.5s;
+}
+* body footer #prelast-footer .container-fluid .row .polpol .policy ul li a:hover {
+  color: red;
+}
+* body footer #prelast-footer .container-fluid .row .secsec .security h4 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+* body footer #prelast-footer .container-fluid .row .secsec .security p {
+  font-weight: 300;
+}
+* body footer #prelast-footer .container-fluid .row .secsec .security p:hover {
+  text-decoration: underline;
+}
+* body footer #prelast-footer .container-fluid .row .secsec .security img {
+  margin-top: 2vw;
+}
+* body footer #last {
+  margin-top: 2vw;
+  background-color: black;
+}
+* body footer #last .container-fluid .row .rights,
+* body footer #last .container-fluid .row .id {
+  padding: 0;
+}
+* body footer #last .container-fluid .row .rights h4,
+* body footer #last .container-fluid .row .id h4 {
+  padding: 1vw 0;
+  color: white;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+  vertical-align: 0;
+  transition: 0.5s;
+}
+* body footer #last .container-fluid .row .rights h4:hover,
+* body footer #last .container-fluid .row .id h4:hover {
+  color: red;
+}
+
+@media screen and (max-width: 760px) {
+  * body header {
+    margin-top: 5vw;
+  }
+  * body header .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "balmain" "cur" "store" "customer" "sign" "acc" "help";
+  }
+  * body header .grid-container .item-1 .dropdown-content {
+    background: white;
+  }
+  * body header #more-nav .container-fluid .row .navnav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  * body main #filtration-products .container .row .filter,
+  * body main #filtration-products .container .row .online {
+    display: flex;
+    justify-content: center;
+  }
+  * body main #filtration-products .container .row .dropd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  * body main #filtration-products .container .row .dropd .first span p {
+    font-size: 15px;
+  }
+  * body main #filtration-products .container .row .dropd .first span .dropdown button {
+    font-size: 15px;
+  }
+  * body main #filtration-products .container .row .dropd .first span .dropdown .sec {
+    padding: 0;
+  }
+  * body main #filtration-products .container .row .dropd .second span {
+    display: flex;
+    align-items: center;
+  }
+  * body main #product-list .container .grid-container .grid-item .product-container {
+    width: 300px;
+    height: 500px;
+  }
+  * body main #product-list .container .grid-container .grid-1 .product-container {
+    display: flex;
+    justify-content: center;
+  }
+  * body main #product-list .container .grid-container .grid-1 .product-container .card a img {
+    width: 100%;
+    height: 100%;
+  }
+  * body main #more-link {
+    margin-top: 150px;
+  }
+  * body footer #prelast-footer .container-fluid .row .custcust .customer h4 {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .custcust .customer ul li {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .polpol .policy h4 {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .polpol .policy ul li {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .secsec .security h4 {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .secsec .security p {
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .secsec .security a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  * body footer #prelast-footer .container-fluid .row .secsec .security a img {
+    text-align: center;
+  }
+}/*# sourceMappingURL=products.css.map */

@@ -1,0 +1,93 @@
+﻿@model SiteInfo
+<main>
+    <section id="ad">
+        <div class="bring-ad container-fluid">
+            <div class="row">
+                <div class="col bringing">
+                    <h3>bring in the new</h3>
+                    <p>
+                        We're here for the fresh, inspired pieces in <br />
+                        eye-catching colors and statement silhouettes
+                    </p>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-lg-2"></div>
+                <div class="col-sm-12 col-md-12 col-lg-5 col-xl-4 linkuni">
+                    <a  asp-controller="shop" asp-action="index" asp-route-gender="1" asp-route-newarrival="true">SHOP MEN’S NEW ARRIVALS</a>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-5 col-xl-4 linkuni">
+                    <a asp-controller="shop" asp-action="index" asp-route-gender="2" asp-route-newarrival="true">SHOP WOMEN’S NEW ARRIVALS</a>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+    </section>
+    <section id="new">
+        <div class="what-new container-fluid">
+            <div class="row">
+                <div class="col new-text">
+                    <h3>What’s New</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col owlcar">
+                    <div class="owl-carousel">
+           @await Component.InvokeAsync("Product")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="categories">
+        <div class="category container-fluid">
+            <div class="row">
+                <div class="col cat-text">
+                    <h3>Categories</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col owlcar">
+                    <div class="owl-carousel">
+                        @await Component.InvokeAsync("Categories")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @await Component.InvokeAsync("Collection", new{isfirst = true})
+    <section id="accessories">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+                <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 accmenu">
+                    <button type="menu">Top Products  <a asp-controller="shop" asp-action="index" asp-route-top="true" style="color: black; text-decoration: underline;"> SEE ALL</a></button>
+                </div>
+
+                @await Component.InvokeAsync("Product", new{discount = true, all= true})
+            </div>
+        </div>
+    </section>
+    <section id="shop-with-us">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>why shop with us</h3>
+                </div>
+            </div>
+            <div class="row sec d-flex justify-content-center">
+
+                    @await Component.InvokeAsync("Collection")
+
+            </div>
+        </div>
+    </section>
+    <section id="balmain-logo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <a aasp-controller ="home" asp-action="index" ><img src="~/assets/img/@Model.Logo" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

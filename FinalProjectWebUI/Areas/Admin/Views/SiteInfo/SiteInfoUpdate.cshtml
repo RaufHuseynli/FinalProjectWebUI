@@ -1,0 +1,192 @@
+﻿@model SiteInfoFormModel
+
+@{
+    ViewData["Title"] = "Site Info / Update";
+
+}
+
+@section addcss{
+    <style>
+
+
+        .label-situation {
+            background-color: transparent;
+            position: relative !important;
+        }
+
+            .label-situation > label {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: rgba(0, 0, 0, 0.10) !important;
+            }
+
+            .label-situation > img {
+                width: 100%;
+            }
+
+        .input-situation {
+            opacity: 0 !important;
+            background-color: transparent;
+            position: absolute !important;
+            height: 200px !important
+        }
+
+        #plusIcon, #plusLogo {
+            position: absolute;
+        }
+
+        .row div:nth-child(2) > div > label {
+            text-align: left !important;
+        }
+
+
+
+
+
+        label {
+            border-color: transparent !important;
+            color: black !important;
+            background-color: transparent !important;
+            text-align: left;
+            padding-left: 0;
+        }
+    </style>
+}
+
+<div class="container p-5">
+    <h2 class="text-dark">Update Site Info</h2>
+
+
+
+    <form method="post" action="SiteInfoUpdate" enctype="multipart/form-data">
+
+        <div class="row text-center">
+
+
+
+            <div class="col-md-12 col-sm-12">
+
+                <div class="col-md-12" asp-validation-summary="All"></div>
+
+                <div class="form-group">
+                    <label class="form-control" for="name">Store</label>
+                    <select id="name" required asp-for="SiteInfo.StoreId" asp-items="ViewBag.store" class="form-control text-dark"></select>
+                    <span asp-validation-for="SiteInfo.StoreId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control" for="favicon">Icon</label>
+                    <input id="favicon" type="file" name="fileIcon" class="form-control text-dark" />
+                    <span asp-validation-for="SiteInfo.FavIcon" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control" for="file-logo">Logo</label>
+                    <input id="file-logo" type="file" name="fileLogo" class="form-control text-dark" />
+                    <span asp-validation-for="SiteInfo.Logo" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="hidden" required asp-for="SiteInfo.Id" class="form-control text-dark" />
+                    <input type="hidden" required asp-for="SiteInfo.Logo" class="form-control text-dark" />
+                    <input type="hidden" required asp-for="SiteInfo.FavIcon" class="form-control text-dark" />
+                    <label class="form-control" for="name">Name</label>
+                    <input id="name" required asp-for="SiteInfo.Name" class="form-control text-dark" />
+                    <span asp-validation-for="SiteInfo.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-control" for="name">Number</label>
+                    <input id="name" required asp-for="SiteInfo.Number" class="form-control text-dark" />
+                    <span asp-validation-for="SiteInfo.Number" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control" for="name">Email</label>
+                    <input id="name" required asp-for="SiteInfo.Email" class="form-control text-dark" />
+                    <span asp-validation-for="SiteInfo.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-control" for="name">Address</label>
+                    <input id="name" required asp-for="SiteInfo.Address" class="form-control text-dark" />
+                    <span asp-validation-for="SiteInfo.Address" class="text-danger"></span>
+                </div>
+
+                <div class="table-responsive" style="margin-top: 2%;">
+                    <table class="table table-bordered border-primary mb-0">
+
+                        <thead>
+                            <tr>
+                                <th>Icon</th>
+                                <th>Name</th>
+                                <th>Link</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.SiteSocials)
+                            {
+                                <tr>
+                                    <td>
+                                       @Html.Raw(@item.Social.Name) 
+                                    </td>
+                                    <td>
+                                        @item.Social.Name
+                                    </td>
+                                    <td>
+                                        @item.Social.Icon
+                                    </td>
+                                    <td>
+                                        <a asp-action="SocialUpdate" asp-route-id="@item.Id" asp-route-infoid="@item.SiteInfoId" class="btn btn-sm btn-warning"><i class="fa-solid fa-pen"></i></a>
+                                        <a asp-action="SocialDelete" asp-route-id="@item.Id" asp-route-infoid="@item.SiteInfoId" class="btn btn-sm btn-warning"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+
+
+
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="social-section col-md-12">
+                </div>
+                <a id="add-social" class="btn btn-primary my-5">Add Social Link</a>
+                <input class="btn btn-primary my-5" type="submit" value="Update" />
+            </div>
+
+        </div>
+
+
+    </form>
+    @section addjs{
+        <script>
+            var icount = 0;
+            $('#add-social').click(function () {
+
+                var template = `<hr style="width: 100%; margin:2% 0%; background: #0000004d; height: 2px;"/>
+                                            <div class="form-group">
+                                                <label class="form-control" for="name">Social Icon</label>
+                                                           <input id="name" required name="SocialLink[${icount}].Icon" class="form-control text-dark" />
+                                                <span Address" class="text-danger"></span>
+                                            </div>
+                                              <div class="form-group">
+                                                <label class="form-control" for="name">Social Name</label>
+                                                           <input id="name" required name="SocialLink[${icount}].Name" class="form-control text-dark" />
+                                                <span Address" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-control" for="name">Social Link</label>
+                                                                        <input id="name" required name="SocialLink[${icount}].Link" class="form-control text-dark" />
+                                                <span Address" class="text-danger"></span>
+                                            </div>
+                                                        <hr style="width: 100%; margin:2% 0%; background: #0000004d; height: 2px;"/>`;
+                $('.social-section').append(`${template}`);
+                icount++;
+                console.log(icount)
+            })
+        </script>
+    }
+</div>

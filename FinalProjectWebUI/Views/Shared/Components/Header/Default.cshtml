@@ -1,0 +1,95 @@
+﻿@model FooterViewModel
+<header>
+    <nav>
+        <div class="grid-container">
+            <div class="item-1">
+                <div class="dropdown ms-3">
+                    <a href="#" class="select-menu">Categories
+                        <div class="expand-menu">
+                            <ul>
+                                @foreach(var item in Model.Categories)
+                                {
+                                    <li><a asp-controller="shop" asp-action="index" asp-route-category="@item.Id">@item.Name</a></li>
+                                }
+                                
+                            </ul>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="item-2">
+
+
+                <a href="#" class="select-menu1">
+                    Find a Store
+                        <div class="expand-menu1">
+                            <ul>
+                                @foreach(var item in Model.Stores)
+                                {
+                                    <li><a  asp-action="index" asp-route-categorystore="@item.Id">@item.Name</a></li>
+                                }
+                            </ul>
+                        </div>
+                    </a>
+
+
+            </div>
+            <div class="item-3">
+                <a asp-controller="shop" asp-action="index">Products</a>
+            </div>
+            <div class="item-4">
+                <a asp-controller="home" asp-action="index"><img src="~/assets/img/@Model.SiteInfo.Logo" alt="" /></a>
+            </div>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="item-5">
+                    <a asp-controller="account" asp-action="Logout">Logout</a>
+                </div>
+            }
+            else
+            {
+                <div class="item-5">
+                    <a asp-controller="account" asp-action="login">Sign In</a>
+                </div>
+            }
+
+            <div class="item-6">
+                <a asp-controller="account" asp-action="register">Sign Up</a>
+            </div>
+            <div class="item-7">
+                <a asp-controller="contact" asp-action="index">Help</a>
+            </div>
+        </div>
+    </nav>
+    <section id="more-nav">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navnav col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                    <ul class="d-flex align-items-center justify-content-around">
+                        <li><a asp-controller="shop" asp-action="index" asp-route-newarrival="true">New arrivals</a></li>
+                        <li><a asp-controller="shop" asp-action="index" asp-route-gender="3">Unisex</a></li>
+                        <li><a asp-controller="shop" asp-action="index" asp-route-gender="2">Women</a></li>
+                        <li><a asp-controller="shop" asp-action="index" asp-route-gender="1">Men</a></li>
+                        <li><a asp-controller="shop" asp-action="index" asp-route-top="true">Top</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-1"></div>
+                <div class="icons col-sm-12 col-md-12 col-lg-2 col-xl-2">
+                    <div class="icon-container d-flex align-items-center justify-content-evenly">
+                        <a asp-controller="basket" asp-action="index">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                           
+                            <sup id="basket-cart">@ViewBag.Count</sup>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+@section addjs{
+
+}

@@ -1,0 +1,95 @@
+﻿@model SiteInfoViewModel
+
+<div class="col-xl-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Stores</h4>
+            <p class="card-description">
+                Add Store <code> <a class="btn btn-primary" asp-action="StoreAdd">Create Store</a></code>
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered border-primary mb-0">
+
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Stores)
+                        {
+                            <tr>
+                                <td>
+                                    @item.Name
+                                </td>
+                                       <td>
+                                    <a asp-action="StoreDetail" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-info"></i></a>
+                                    <a asp-action="StoreUpdate" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-pen"></i></a>
+                                    <a asp-action="StoreDelete" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+                           
+                            </tr>
+
+                        
+                         
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="col-xl-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Site Info</h4>
+            <p class="card-description">
+                Add Site Info <code> <a class="btn btn-primary" asp-action="SiteInfoAdd">Create Site Info</a></code>
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered border-primary mb-0">
+
+                    <thead>
+                        <tr>
+                            <th>Store</th>
+                            <th>Logo</th>
+                            <th>Fav Icon</th>
+                            <th>Name</th>
+                            <th>Number</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.SiteInfo)
+                        {
+                            <tr>
+                                <td> @item.Store.Name </td>
+                                <td class="py-1" style="filter: brightness(0.5);">
+                                    <img src="~/assets/img/@item.Logo" alt="Logo" width="80" height="30" />
+                                </td>
+                                <td class="py-1" style="filter: brightness(0.9);">
+                                    <img src="~/assets/img/@item.FavIcon" alt="Fav Icon" width="80" height="30" />
+                                </td>
+                                <td> @item.Name </td>
+                                <td> @item.Number</td>
+                                <td> @item.Email</td>
+                                <td> @item.Address</td>
+
+                                <td>
+                                    <a asp-action="SiteInfoUpdate" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-pen"></i></a>
+                                    <a asp-action="SiteInfoDelete" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>

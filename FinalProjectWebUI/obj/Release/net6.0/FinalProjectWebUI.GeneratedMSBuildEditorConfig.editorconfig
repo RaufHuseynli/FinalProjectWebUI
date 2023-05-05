@@ -1,0 +1,237 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FinalProjectWebUI
+build_property.RootNamespace = FinalProjectWebUI
+build_property.ProjectDir = C:\Users\pyram\Desktop\MuradBackend\Try\FinalProjectWebUI\FinalProjectWebUI\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\pyram\Desktop\MuradBackend\Try\FinalProjectWebUI\FinalProjectWebUI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/CategoryCollection/AddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlDb2xsZWN0aW9uXEFkZENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/CategoryCollection/AddCollection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlDb2xsZWN0aW9uXEFkZENvbGxlY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/CategoryCollection/CollectionDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlDb2xsZWN0aW9uXENvbGxlY3Rpb25EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/CategoryCollection/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlDb2xsZWN0aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/CategoryCollection/UpdateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlDb2xsZWN0aW9uXFVwZGF0ZUNhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/CategoryCollection/UpdateCollection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlDb2xsZWN0aW9uXFVwZGF0ZUNvbGxlY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/Orders/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJzXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/Orders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/Product/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/Product/AddProductDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxBZGRQcm9kdWN0RGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/Product/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/Product/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/Product/UpdateProductDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxVcGRhdGVQcm9kdWN0RGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/SiteInfo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2l0ZUluZm9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/SiteInfo/SiteInfoAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2l0ZUluZm9cU2l0ZUluZm9BZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/SiteInfo/SiteInfoUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2l0ZUluZm9cU2l0ZUluZm9VcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/SiteInfo/SocialUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2l0ZUluZm9cU29jaWFsVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/SiteInfo/StoreAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2l0ZUluZm9cU3RvcmVBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/SiteInfo/StoreDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2l0ZUluZm9cU3RvcmVEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/SiteInfo/StoreUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2l0ZUluZm9cU3RvcmVVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/SizeColor/AddColor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2l6ZUNvbG9yXEFkZENvbG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/SizeColor/AddSize.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2l6ZUNvbG9yXEFkZFNpemUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/SizeColor/GenderAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2l6ZUNvbG9yXEdlbmRlckFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/SizeColor/GenderUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2l6ZUNvbG9yXEdlbmRlclVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/SizeColor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2l6ZUNvbG9yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/SizeColor/UpdateColor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2l6ZUNvbG9yXFVwZGF0ZUNvbG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/SizeColor/UpdateSize.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2l6ZUNvbG9yXFVwZGF0ZVNpemUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/UserManagment/RoleAssign.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlck1hbmFnbWVudFxSb2xlQXNzaWduLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/UserManagment/RoleCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlck1hbmFnbWVudFxSb2xlQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/UserManagment/Roles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlck1hbmFnbWVudFxSb2xlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/UserManagment/RoleUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlck1hbmFnbWVudFxSb2xlVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/UserManagment/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlck1hbmFnbWVudFxVc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Basket/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Detail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Shared/Components/Categories/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcmllc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Shared/Components/Category/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcnlcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Shared/Components/Collection/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29sbGVjdGlvblxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Shared/Components/Footer/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRm9vdGVyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Shared/Components/Header/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSGVhZGVyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Shared/Components/Product/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvZHVjdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Shop/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pyram/Desktop/MuradBackend/Try/FinalProjectWebUI/FinalProjectWebUI/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-fjb5xufghk

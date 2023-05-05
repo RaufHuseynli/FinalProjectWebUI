@@ -1,0 +1,38 @@
+﻿@model Store
+@{
+    ViewData["Title"] = "Site Info / Store Update";
+
+}
+@section addcss{
+    <style>
+        label {
+            border-color: transparent !important;
+            color: black !important;
+            background-color: transparent !important;
+        }
+    </style>
+ }
+
+<div class="container p-5">
+    <h2 class="text-dark">Update Store</h2>
+
+
+    <div class="form-group">
+        <form method="post" asp-action="StoreUpdate">
+            <div class="col-md-12 form-control bg-transparent border-0" asp-validation-summary="All"></div>
+            <div class="form-group">
+                <label class="form-control">Name</label>
+                <input type="hidden" asp-for="Id" class="form-control text-dark" value="@Model.Id"/>
+                <input required asp-for="Name" class="form-control text-dark" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="d-flex my-5">
+                <input class="btn btn-primary" type="submit" value="Update" />
+                <a asp-action="index" class="btn btn-success">Back</a>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

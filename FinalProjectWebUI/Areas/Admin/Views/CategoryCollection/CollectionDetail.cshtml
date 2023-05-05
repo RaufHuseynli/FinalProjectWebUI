@@ -1,0 +1,73 @@
+﻿@model ProductCollectionViewModel
+@{
+    ViewData["Title"] = "Site Info / Collection Dteail";
+
+}
+@section addcss{
+    <style>
+        label {
+            border-color: transparent !important;
+            color: black !important;
+            background-color: transparent !important;
+        }
+    </style>
+ }
+
+<div class="container p-5">
+    <h2 class="text-dark">Detail Collection</h2>
+
+
+    <div class="form-group">
+        <form>
+            <div class="col-md-12 form-control bg-transparent border-0" asp-validation-summary="All"></div>
+            <div class="form-group">
+                <label class="form-control">Name</label>
+                <input readonly value="@Model.Collection.Name" class="form-control text-dark" />
+             
+            </div>
+
+
+
+
+                <div class="table-responsive">
+                    <table class="table table-bordered border-primary mb-0">
+
+                        <thead>
+                            <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Discount</th>
+                            <th>Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var item in Model.Products)
+                        {
+                         <tr>
+                                <td> <img width="30" height="30" src="~/assets/img/@item.Product.ImagePath"></td>
+                             <td>@item.Product.Name</td>
+                                <td>@item.Product.Discount%</td>
+                                <td>@item.Product.Price</td>
+                                <td>
+                                    <a asp-action="RemoveProductOnCollection" asp-route-id="@Model.Collection.Id" asp-route-product="@item.ProductId">Remove on Collect</a>
+                                </td>
+                         </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            
+
+
+
+
+            <div class="d-flex my-5">
+                <a asp-action="index" class="btn btn-success">Back</a>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

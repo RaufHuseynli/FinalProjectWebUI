@@ -1,0 +1,48 @@
+﻿@section addcss{
+    <style>
+        .product-container .card {
+            border: none;
+            box-shadow: 5px 5px 22px 1px #00000030;
+            border-top-left-radius: 4.25rem;
+            border-top-right-radius: 4.25rem;
+            border-bottom-right-radius: 3rem;
+            border-bottom-left-radius: 3rem;
+        }
+
+        .pre-order{
+            color: black;
+            text-decoration: none;
+        }
+        #gender-choice > div > button::after{
+            display: none;
+        }
+    </style>
+}
+<main>
+   
+    <section id="main-landing">
+        <div class="container">
+            <div class="row">
+                   @await Component.InvokeAsync("Category")
+                <div class="seccol col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                    <div class="grid-container">
+                        @await Component.InvokeAsync("Product", new{category = ViewBag.Category, gender = ViewBag.Gender, size = ViewBag.Size, max = ViewBag.Max, color = ViewBag.Color, newarrival = ViewBag.Newarrival, top = ViewBag.Top, collection = ViewBag.collection} )
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="balmain-logo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <a href=""><img src="/assets/images/balmain.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,127 @@
+﻿@model ColorSizeViewModel
+
+<div class="col-md-4 col-sm-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Colors</h4>
+            <p class="card-description">
+                Add Colors <code> <a class="btn btn-primary" asp-action="AddColor">Create Color</a></code>
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered border-primary mb-0">
+
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Colors)
+                        {
+                            <tr>
+                                <td>
+                                    <span style="display:flex; height:30px; width: 30px; background-color:@item.HexCode; border-radius: 50%;"></span>
+                                </td>
+                                <td>
+                                    @item.Name
+                                </td>
+                                <td>
+                                    <a asp-action="UpdateColor" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-pen"></i></a>
+                                    <a asp-action="DeleteColor" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+
+                            </tr>
+
+
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 col-sm-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Size</h4>
+            <p class="card-description">
+                Add Sizes <code> <a class="btn btn-primary" asp-action="AddSize">Create Size</a></code>
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered border-primary mb-0">
+
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Sizes)
+                        {
+                            <tr>
+                                <td>
+                                    @item.Name
+                                </td>
+                                <td>
+                                    <a asp-action="UpdateSize" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-pen"></i></a>
+                                    <a asp-action="DeleteSize" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+
+                            </tr>
+
+
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 col-sm-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Gender</h4>
+            <p class="card-description">
+                Add Gender <code> <a class="btn btn-primary" asp-action="GenderAdd">Create Gender</a></code>
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered border-primary mb-0">
+
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Genders)
+                        {
+                            <tr>
+                                <td>
+                                    @item.Name
+                                </td>
+                                <td>
+                                    <a asp-action="GenderUpdate" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-pen"></i></a>
+                                    <a asp-action="GenderDelete" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+
+                            </tr>
+
+
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
